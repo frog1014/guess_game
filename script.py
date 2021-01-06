@@ -1,4 +1,10 @@
+'''
+1. The strucutre should be able to enhance in terms of readiblity, and neseted?
+2. Line 65 (corr_num) is it a good way? in regards to functional progarmining 
 
+
+
+'''
 # start the game
 import random
 print('Welcome to the guess name')
