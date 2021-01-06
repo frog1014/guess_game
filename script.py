@@ -9,8 +9,8 @@
 import random
 print('Welcome to the guess name')
 attempt = 1
-
-def run_game(guess_num, corr_num):
+corr_num = 0
+def run_game(guess_num):
     global attempt
     if guess_num == corr_num:
 
@@ -27,7 +27,7 @@ def min_max(min_num,max_num):
         return True
     else:
         corr_num = random.randint(min_num, max_num)
-        return corr_num
+        return False
 
 
 # game on
@@ -62,7 +62,7 @@ if __name__ == '__main__':
                     print("insert the number only")
                     continue
 
-                corr_num = min_max(min_num,max_num)
+                min_max(min_num,max_num)
 
 
 
@@ -80,7 +80,7 @@ if __name__ == '__main__':
                         print("insert number only")
                         continue
 
-                    if (run_game(guess_num, corr_num)):
+                    if (run_game(guess_num)):
                         break
                     else:
                         continue
